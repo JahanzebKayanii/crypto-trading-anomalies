@@ -6,9 +6,6 @@ Detects crypto market manipulation by flagging days when:
 Price moves >5% AND
 Volume spikes >2x normal
 
-Quick Start
-bashpip install pandas numpy matplotlib
-python crypto_detector.py
 How It Works
 
 Generates fake crypto data with hidden manipulation patterns
@@ -16,15 +13,16 @@ Runs detection algorithm to find suspicious trading days
 Shows results with charts highlighting red flag days
 
 Sample Output
-Found 8 suspicious trading days:
+Found 5 suspicious trading days:
 
-Date: 2024-01-31
-  Price change: 15.2%
-  Volume spike: 3.1x normal
+Date: 2025-05-05
+  Price change: -6.5%
+  Volume spike: 2.6x normal
 Plus visual charts with red dots marking sketchy days.
 Detection Logic
 Simple but effective:
 pythonsuspicious = (price_change > 5%) & (volume_spike > 2x)
+
 Why This Works
 
 Normal trading: Small price moves, normal volume ✅
